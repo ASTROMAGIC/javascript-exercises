@@ -1,10 +1,8 @@
 const repeatString = function(string, times) {
-    let string = "";
-    while (times > 0) {
-        repeatString += string;
-        times--;
-    }
-    return repeatString;
+    if (times > 0)
+        return string.repeat(times);
+    else 
+        return "";
 };
 
 // Do not edit below this line
